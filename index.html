@@ -67,20 +67,72 @@
                 text-shadow: 0 6px 18px rgba(0,0,0,.35)
             }
         }
+
+        .bg-image-header {
+            background-image: url('images/Thailand-gold.jpg');
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+
+        hr.secondary {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            width: 170px;
+            margin-top: 22px;
+            padding-bottom: 24px;
+        }
+
+        .text-secondary-1 {
+            color: #cbcbcb;
+            margin-bottom:150px;
+        }
+
+        .fs-16 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .well-1 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .triangle {
+            position: relative;
+            z-index: 1;
+        }
+            .triangle:after, .triangle:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-bottom: 1670px solid #FFFFFF;
+                top: -1669px;
+                left: 50%;
+                z-index: -10;
+                pointer-events: none;
+            }
+
+            .triangle:before {
+                border-right: 10000px solid transparent;
+                -moz-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                -o-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+
+            .triangle:after {
+                border-left: 10000px solid transparent;
+            }
     </style>
 </head>
 <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
-    <div style="background-color: red; padding: 10px; position: sticky; top: 0; z-index: 1">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center text-light">
-                    THIS IS A DEMO SITE.
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- ======= Header ======= -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D4AF37; position: sticky; top: 0; z-index: 1">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D4AF37; top: 0;">
         <a class="navbar-brand" href="#"><img src="images/thumbnail.png" class="img-fluid" style="height: 50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -106,8 +158,17 @@
             <img src="images/thaiflag.jpg" style="height: 30px; margin: 10px 0 10px 0" />
         </div>
     </nav>	<!-- End Header -->
-    <header>
-        <div class="jumbotron" style="background-image: url('images/Thailand.jpg'); background-size: cover;-ms-background-size: cover;-o-background-size: cover;-moz-background-size: cover;-webkit-background-size: cover; background-position:center !important;border-radius: 0 !important; background-repeat: no-repeat; height: 100%; background-attachment: fixed">
+    <header class="bg-image-header">
+        <section style="padding-top:100px; padding-bottom:70px">
+            <div class="container text-center">
+                <img src="images/Logo.png" class="img-fluid" style="height: 100px" />
+                <h1>Rich Inter (Consolidator) Company Limited</h1>
+                <h6>From Skyline, Shoreline to Landline</h6>
+                <hr class="secondary" />
+                <p class="text-secondary-1 fs-16">We are an established international LCL Consolidator, started off as Rich Inter Import-Export Partnership since July 2018. With almost 5 years of service in LCL, we are now offering our own consolidation box on weekly schedule to various trans-shipments ports around the world.</p>
+            </div>
+        </section>
+        <!--<div class="jumbotron degree-right" style="background-image: url('images/Thailand-min.jpg'); background-size: cover;-ms-background-size: cover;-o-background-size: cover;-moz-background-size: cover;-webkit-background-size: cover; background-position:center !important;border-radius: 0 !important; background-repeat: no-repeat; height: 100%;">
             <div style="background: rgba(0, 0, 0, 0.5); padding: 20px">
                 <div class="container">
                     <div class="row">
@@ -123,9 +184,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </header>
-
+    <section class="well-1 triangle">
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-12 demo">
@@ -133,8 +195,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 demo">
-                <p class="text-justify">Rich Inter (Consolidator) Company Limited is an established international LCL Consolidator, started off as Rich Inter Import-Export Partnership since July 2018. With almost 5 years of service in LCL, we are now offering our own consolidation box on weekly schedule to various trans-shipments ports around the world.</p>
+            <div class="col-12 demo" style="margin-bottom:50px">
                 <p class="text-justify">We specialize in an extensive range of Air Freight, Sea Freight, Cross-Border Trucking, Project Logistics, Customs Brokerage, Warehousing, Supply Chain, Cargo Insurance, Product Outsourcing, FDA Registration, Thai Industrial Standard Registration, and ISO Certification. Our network spans Asia Pacific, Europe, Scandinavia, United States, Central and South America, Africa and Canada.</p>
                 <p class="text-justify">We are able to form up firmly our international network with the daily increase of oversea partners by constantly looking for opportunities to expand our network via cooperation with overseas partners in order to serve our ever-growing list of customers. Our wealth of experience and friendly services on freight coverage (Air, Sea and Land) has since earned the trust of many prestigious firms both locally and abroad.</p>
             </div>
@@ -169,59 +230,59 @@
     </div>
     <div class="container" style="margin-top: 50px">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/plane.jpg" class="img-fluid rounded-circle" style="height: 200px">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center img-hover-zoom">
+                <img src="images/plane.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#airFreightModal">
                 <h4>Air Freight</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/sea.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/sea.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#seaFreightModal">
                 <h4>Sea Freight</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/truck2.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/truck2.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#roadFreightModal">
                 <h4>Cross-Border Trucking</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/project.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/project.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#cargoFreightModal">
                 <h4>Project Logistics</h4>
             </div>
 
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/customs.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/customs.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#customsFreightModal">
                 <h4>Customs Brokerage</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/warehouse.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/warehouse.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#warehouseFreightModal">
                 <h4>Warehousing</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/supply.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/supply.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#supplyChainFreightModal">
                 <h4>Supply Chain</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/cargo.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/cargo.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#cargoInsuranceFreightModal">
                 <h4>Cargo Insurance</h4>
             </div>
 
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/product.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/product.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#productFreightModal">
                 <h4>Product Outsourcing</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/register.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/register.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#fdaFreightModal">
                 <h4>FDA Registration</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/tis.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/tis.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#thaiFreightModal">
                 <h4>Thai Industrial Standard Registration</h4>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                <img src="images/iso.jpg" class="img-fluid rounded-circle" style="height: 200px">
+                <img src="images/iso.jpg" class="img-fluid rounded-circle" style="height: 200px; cursor:pointer" data-toggle="modal" data-target="#isoFreightModal">
                 <h4>ISO Certification</h4>
             </div>
 
@@ -265,28 +326,283 @@
             </div>
         </div>
     </div>
-    <footer class="text-center" style="background-color: #D4AF37; padding: 10px">
-        <div style="background-color: red; padding: 10px; position: sticky; top: 0; z-index: 1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center text-light">
-                        THIS IS A DEMO SITE.
+
+    <!-- Modal -->
+        <div class="modal fade" id="airFreightModal" tabindex="-1" role="dialog" aria-labelledby="airFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="airFreightModalTitle">Air Freight</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/suvairport.jpg" alt="suvarnabhumi airport" /></p>
+                        <p>A wide array of possible air freight services and transit times arranged in cooperation with global airline partners make sure your cargo arrives on schedule. All steps in the transport chain are visible through IT platforms.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>All rights reserved.</p>
+        <div class="modal fade" id="seaFreightModal" tabindex="-1" role="dialog" aria-labelledby="seaFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="seaFreightModalTitle">Sea Freight</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/laemchabang.jpg" alt="Laem Chabang" /></p>
+                        <p>Our reliable sea cargo services ensure that your goods reach any continent in the world safely and on time. We provide a variety of FCL (Full Container Load), LCL (Less Container Load) and special project transport solutions tailored to your needs.</p>
+                        <p>FCL stands for full-container load and describe the transport of container from the point of loading to the point of unloading. Depending on the volume, FCL can be the most cost-efficient transport mode for your business.</p>
+                        <p>LCL stands for less than container load describes the shipment of goods with less volume than a full container. These LCL shipments are generally below 1000 cubic feet. This is because a 20 ft container contains 1000 cubic feet capacity, so it makes sense to send via FCL at that point.</p>
+                        <p>
+                            Buyers and Sellers Consolidation:
+                            We offer Buyer’s and Seller’s Consolidation Services for your ocean freight shipments. By combining your less-than-container load (LCL) shipment in a full-container load (FCL), you can save cost and resources.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <div class="modal fade" id="roadFreightModal" tabindex="-1" role="dialog" aria-labelledby="roadFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="roadFreightModalTitle">Road Freight (Cross-Border Trucking)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/roadfreight.jpg" alt="Road Freight" /></p>
+                        <p>We can handle your transports via road from point A to point B. As a global service provider, Rich Inter maintains an extensive network structure on various continents for road freight transports. We offer individual and economic solutions based on the weight of your goods as well as the volume.</p>
+                        <p>Our road service portfolio ranges from full-load (FTL) to part load (LTL) groupage and express solutions. We provide specialized transport services for a variety of goods, such as oversized and out-of-gauge cargoes, temperature-sensitive food stuffs and pharmaceuticals as well as vulnerable and valuable cargo.</p>
+                        <p>LTL – Less Than Truck Loads, are goods transported in a quantity that only takes up part of the trailer. For LTL, Rich Inter provides a dedicated truck, but your goods are consolidated, meaning you share the transport expenses with other consignees.</p>
+                        <p>FTL – Full Truck Load, if a shipment fills the entire truck space, this is full load or full load truck loads (FTL). We reserve a complete truck for your cargo and transport your goods directly from the loading point to the final destinations or point of use.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="cargoFreightModal" tabindex="-1" role="dialog" aria-labelledby="cargoFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cargoFreightModalTitle">Project Logistics</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/cargo-min.jpg" alt="Project Logistics" /></p>
+                        <p>Through our worldwide network, we offer delivery from any origin to any destination, including turnkey deliveries.</p>
+                        <p>Our dedicated team specialist is ready to assist you with all aspects of special projects for the worldwide handling of large, heavy, high value or critical (to the project they are intended for) pieces of equipment. Also includes heavy lift shipments made of various components which need disassembly for shipment and reassembly after delivery.</p>
+                        <p>With a quality assurance system that guarantees you receive the service and quality you require.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="customsFreightModal" tabindex="-1" role="dialog" aria-labelledby="customsFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="customsFreightModalTitle">Customs Brokerage</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/customs-min.jpg" alt="Customs Brokerage" /></p>
+                        <p>With a quality assurance system that guarantees you receive the service and quality you require. Compliance with customs regulations is an essential component in the international supply chain and a responsibility for all importers.</p>
+                        <p>We do not allow any compromises when it comes to customs and regulatory compliance, given the significant cost of non-compliance.</p>
+                        <p>Our client collaboration goes beyond the basic classification and data entry. We partner with customers to assess their compliance profile and advise recommendations that improve the operation’s accuracy and efficiency. We make sure to stay up to date with any changes in regulatory matters for us to take immediate action on behalf of our clients.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="cargoInsuranceFreightModal" tabindex="-1" role="dialog" aria-labelledby="cargoInsuranceFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cargoInsuranceFreightModalTitle">Cargo Insurance</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/cargoinsurance.jpg" alt="Cargo Insurance" /></p>
+                        <p>Business need cargo insurance to reduce the risk of importing and exporting. The right coverage against physical damage or loss of goods during shipping, whether by air, sea and land.</p>
+                        <p>The following aspects are some of the covered under the benefits of cargo insurance:</p>
+                        <p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Damages due to inappropriate packing</li>
+                                <li class="list-group-item">Infestation</li>
+                                <li class="list-group-item">Cargo abandonment</li>
+                                <li class="list-group-item">Customs rejection</li>
+                                <li class="list-group-item">Employees dishonesty</li>
+                                <li class="list-group-item">Damages due to collision</li>
+                                <li class="list-group-item">Damages due to heavy weather, sinking, derailment</li>
+                                <li class="list-group-item">Non-delivery</li>
+                                <li class="list-group-item">Theft</li>
+                                <li class="list-group-item">Fire</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="warehouseFreightModal" tabindex="-1" role="dialog" aria-labelledby="warehouseFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="warehouseFreightModalTitle">Warehousing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/warehouse-min.jpg" alt="Warehousing" /></p>
+                        <p>Warehousing involve all the people, processes, and programs required to keep your items moving in, around, and through your warehouse.</p>
+                        <p>An organized warehouse saves employees time, reduces overall costs, and helps you deliver products and services to market faster.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="supplyChainFreightModal" tabindex="-1" role="dialog" aria-labelledby="supplyChainFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="supplyChainFreightModalTitle">Supply Chain</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/supplychain-min.jpg" alt="Supply Chain" /></p>
+                        <p>We can manage the various processes that occur during the production of (a) the seller of the factors of production (suppliers) to reduce production costs.</p>
+                        <p>Until increasing the company's profits The process in this section starts from Procurement, Manufacturing, Storage, Information Technology, Distribution, and Transportation. Create satisfaction for customers</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productFreightModal" tabindex="-1" role="dialog" aria-labelledby="productFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productFreightModalTitle">Product Outsourcing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/product-min.jpg" alt="Product Outsourcing" /></p>
+                        <p>We can buy a product rather than produce it itself.</p>
+                        <p>It gives the work to someone that can do it more efficiently. It allows a company to share risks, reduce operating costs; free tied-up resources minimize hard to manage processes or functions, improve its market focus and keeps the company flexible.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fdaFreightModal" tabindex="-1" role="dialog" aria-labelledby="fdaFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fdaFreightModalTitle">FDA Registration</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/fda-min.jpg" alt="FDA Registration" /></p>
+                        <p>If you are looking for assistance in FDA registration, we will provide you one-stop service from import registration to import customs clearance, delivery.</p>
+                        <p>Our dedicated and experienced consultants will provide you guidance of Thailand FDA regulations and logistics service in one–set at a reasonable cost and time frame.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="thaiFreightModal" tabindex="-1" role="dialog" aria-labelledby="thaiFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="thaiFreightModalTitle">Thai Industrial Standard Registration</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/register-min.jpg" alt="FDA Registration" /></p>
+                        <p>We can assist with the Thai Industrial Standard Registration to achieve standardization and to target products of the best quality.</p>
+                        <p>This includes technical specifications, product characteristics, product handling performance, raw material quality and testing procedures.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="isoFreightModal" tabindex="-1" role="dialog" aria-labelledby="isoFreightModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="isoFreightModalTitle">ISO Certification</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center"><img class="rounded mx-auto d-block img-fluid img-thumbnail" src="images/iso-min.png" alt="FDA Registration" /></p>
+                        <p>We can assist with the ISO Certification to facilitate international trade by providing a single standard that is recognized and respected globally.</p>
+                        <p>We can help your organisation to facilitate the process of achieving this recommended certification. We can also certify your organisation as being committed to continual improvement and customer satisfaction.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center" style="background-color: #D4AF37; padding: 10px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
