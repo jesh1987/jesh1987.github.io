@@ -1,0 +1,146 @@
+﻿body {
+    font-family: "Noto Sans", sans-serif, "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tracking-in-expand {
+    animation: tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.col-12 h2:after {
+    content: '';
+    width: 55px;
+    height: 3px;
+    background: #F7BE3D;
+    display: block;
+    margin-top: 13px;
+}
+
+h4 {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.text-shadow-drop-bottom {
+    -webkit-animation: text-shadow-drop-bottom .6s both;
+    animation: text-shadow-drop-bottom .6s both
+}
+
+@-webkit-keyframes text-shadow-drop-bottom {
+    0% {
+        text-shadow: 0 0 0 transparent
+    }
+
+    100% {
+        text-shadow: 0 6px 18px rgba(0,0,0,.35)
+    }
+}
+
+@keyframes text-shadow-drop-bottom {
+    0% {
+        text-shadow: 0 0 0 transparent
+    }
+
+    100% {
+        text-shadow: 0 6px 18px rgba(0,0,0,.35)
+    }
+}
+
+.bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-image-1 {
+    background-image: url('images/Thailand-gold.jpg');
+}
+
+hr.secondary {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 170px;
+    margin-top: 22px;
+    padding-bottom: 24px;
+}
+
+.text-secondary-1 {
+    color: #cbcbcb;
+    margin-bottom: 80px;
+}
+
+.fs-16 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.well-1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.triangle {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+
+    .triangle:after, .triangle:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 1670px solid #FFFFFF;
+        top: -1669px;
+        left: 50%;
+        z-index: -10;
+        pointer-events: none;
+    }
+
+    .triangle:before {
+        border-right: 10000px solid transparent;
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .triangle:after {
+        border-left: 10000px solid transparent;
+    }
+
+.blog-post {
+    height: 100%;
+}
+
+section {
+    display: block;
+}
