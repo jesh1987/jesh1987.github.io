@@ -39,16 +39,16 @@ h2{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 90px;
+  right: 20px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 10px;
   border: none;
   outline: none;
   background-color: red;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
   transition: all 0.3s ease 0s;
 }
@@ -88,6 +88,36 @@ h2{
 h4 {
     margin-bottom: 50px;
     margin-top: 20px;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+}
+
+.nav-link.disabled{
+    color: #bbbbbb  !important;
+}
+
+.h1-responsive{
+    font-size: 130%;
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .text-shadow-drop-bottom {
